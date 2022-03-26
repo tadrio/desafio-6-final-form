@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTC - Faça seu cadastro</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Faça seu cadastro</h1>
+    <form>
+      <div class="vertical-box">
+        <label class="title" for="name-field">Nome completo</label>
+        <input
+          type="text"
+          placeholder="Digite seu nome completo"
+          id="name-field"
+          required
+          class="input-field"
+        />
+      </div>
+      <div class="horizontal-box">
+        <div class="vertical-box">
+          <label class="title" for="birthday-field">Data de Nascimento</label>
+          <input
+            class="date-input-field"
+            type="date"
+            id="birthday-field"
+            required
+          />
+        </div>
+        <div class="vertical-box">
+          <label class="title" for="country-field">País<span>*</span></label>
+          <select class="input-field" class="teste" id="country-field" required>
+            <option disabled selected>Selecionar</option>
+            <option>Brasil</option>
+            <option>Argentina</option>
+            <option>Chile</option>
+            <option>Uruguai</option>
+          </select>
+        </div>
+      </div>
+      <div class="vertical-box">
+        <label class="title">Gênero:</label>
+        <div class="horizontal-box">
+          <div class="radio-box">
+            <input
+              class="radio-style"
+              id="fem-gender-field"
+              type="radio"
+              name="gender-selection"
+              required
+            />
+            <label class="title" for="fem-gender-field">Feminino</label>
+          </div>
+          <div class="radio-box">
+            <input
+              class="radio-style"
+              id="masc-gender-field"
+              type="radio"
+              name="gender-selection"
+              required
+            />
+            <label class="title" for="masc-gender-field">Masculino</label>
+          </div>
+          <div class="radio-box">
+            <input
+              class="radio-style"
+              id="no-gender-field"
+              type="radio"
+              name="gender-selection"
+              required
+            />
+            <label class="title" for="no-gender-field">Não declarar</label>
+          </div>
+        </div>
+      </div>
+      <div class="vertical-box">
+        <label class="title">E-mail</label>
+        <input
+          class="input-field"
+          type="email"
+          placeholder="Digite seu e-mail"
+          required
+        />
+      </div>
+      <div class="vertical-box">
+        <label class="title">Senha</label>
+        <input
+          class="input-field"
+          type="password"
+          placeholder="Crie uma senha"
+          required
+        />
+      </div>
+      <div class="vertical-box">
+        <label class="title">Confirme sua Senha</label>
+        <input
+          class="input-field"
+          type="password"
+          placeholder="Confirmar senha"
+          required
+        />
+      </div>
+      <div class="horizontal-box">
+        <input type="checkbox" required class="checkbox-style" />
+        <label class="text"
+          >Aceito os <a href="#">Termos e condições</a> e concordo com as
+          <a href="#">políticas de privacidade</a> do Hall To Code.</label
+        >
+      </div>
+      <button>Cadastrar</button>
+    </form>
+    <p class="text">
+      Já tem uma conta no Hall To Code? <a href="/login.html">Entre agora</a>
+    </p>
+  </body>
+</html>
